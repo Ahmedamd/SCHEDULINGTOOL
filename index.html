@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+<!-- icon -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/all.css" />
+
+
+    <title>Scheduling Tool</title>
+  </head>
+
+
+  <body>
+
+    <div class="first-page">
+      <!-- <img src="./img/b2.jpg" alt=""> -->
+      <div class="banner">
+    
+        <h1 class="banner-title">Scheduling Tool</h1>
+        <h3 class="banner-subtitle">A tool that helps employers schedule the hours of employees</h3>
+    
+        <!-- <a href="skills.html" class="banner-btn">explore</a> -->
+              <br>
+              <br>
+              <br>
+              <br>
+
+        <a href="#second-page" class="banner-btn ">Use tool</a>
+      </div>
+
+    </div>
+    <!-- content divid -->
+    <div class="content-divider"></div>
+
+    <div class="second-page " id="#second-page">
+<div class="part-one fade-in ">
+
+ 
+<div class="modified">
+<h3 class="header-a ">
+  Step 1. Enter Store Information
+</h3>
+<div class="cane-one box ">
+  <div class="section-name">
+
+    <input type="text" name="" id="" class="name-a" placeholder="store name" />
+  </div>
+
+  <!-- <input type="number" name="" id="x" class="hours " placeholder="open time " />  -->
+  <div class="custom-select">
+    <select id="store-start">
+      <option value="" selected>Open time..</option>
+      <option value="1" class="str-s">1:00</option>
+      <option value="2" class="str-s">2:00</option>
+      <option value="3" class="str-s">3:00 </option>
+      <option value="4" class="str-s">4:00</option>
+      <option value="5" class="str-s">5:00</option>
+      <option value="6" class="str-s">6:00</option>
+      <option value="7" class="str-s">7:00</option>
+      <option value="8" class="str-s">8:00</option>
+      <option value="9" class="str-s">9:00</option>
+      <option value="10" class="str-s">10:00</option>
+      <option value="11" class="str-s">11:00</option>
+      <option value="12" class="str-s">12:00</option>
+      <option value="13" class="str-s">13:00</option>
+      <option value="14" class="str-s">14:00</option>
+      <option value="15" class="str-s">15:00 </option>
+      <option value="16" class="str-s">16:00</option>
+      <option value="17" class="str-s">17:00</option>
+      <option value="18" class="str-s">18:00</option>
+      <option value="19" class="str-s">19:00</option>
+      <option value="20" class="str-s">20:00</option>
+      <option value="21" class="str-s">21:00</option>
+      <option value="22" class="str-s">22:00</option>
+      <option value="23" class="str-s">23:00</option>
+      <option value="24" class="str-s">24:00</option>
+    </select>
+
+  </div>
+
+
+
+  <select id="store-finish">
+    <option value="" selected>Close time..</option>
+    <option value="1" class="str-f">1:00</option>
+    <option value="2" class="str-f">2:00</option>
+    <option value="3" class="str-f">3:00 </option>
+    <option value="4" class="str-f">4:00</option>
+    <option value="5" class="str-f">5:00</option>
+    <option value="6" class="str-f">6:00 </option>
+    <option value="7" class="str-f">7:00</option>
+    <option value="8" class="str-f">8:00</option>
+    <option value="9" class="str-f">9:00 </option>
+    <option value="10" class="str-f">10:00</option>
+    <option value="11" class="str-f">11:00</option>
+    <option value="12" class="str-f"> 12:00</option>
+    <option value="13" class="str-f">13:00</option>
+    <option value="14" class="str-f">14:00</option>
+    <option value="15" class="str-f">15:00 </option>
+    <option value="16" class="str-f">16:00</option>
+    <option value="17" class="str-f">17:00</option>
+    <option value="18" class="str-f">18:00</option>
+    <option value="19" class="str-f">19:00</option>
+    <option value="20" class="str-f">20:00</option>
+    <option value="21" class="str-f">21:00</option>
+    <option value="22" class="str-f">22:00</option>
+    <option value="23" class="str-f">23:00</option>
+    <option value="24" class="str-f">24:00</option>
+
+
+
+  </select>
+
+  <!-- <input type="number" name="" id="y" class="hours" placeholder="close time " /> -->
+
+
+  <button type="button" class="btn-a" onclick="funcOne()">
+    Go
+  </button>
+</div>
+</div>
+  
+  <!-- end of cane one box -->
+
+  <div class="values">
+
+    <div class="fixed" id="fixed">
+
+      <div class="store-hours-a" id ="new-zero"></div>
+      <div id="new-a"></div>
+      <!-- <div id="new-b"></div> -->
+    </div>
+
+  </div>
+
+
+</div>
+<!-- end of part 1 -->
+
+
+<br>
+<br>
+<br>
+<!-- start of part-two -->
+
+<div class="part-two fade-in " id="part-two">
+<div class="modified">
+<h3 class="header-b">
+  Step 2. Enter Staff Members
+</h3>
+<div class="cane-two box">
+
+  <div class="section-name">
+
+    <input type="text" name="id" id="name-b" class="name-b" placeholder="name" />
+  </div>
+
+  <!-- <div class="section-hours"> -->
+
+  <select id="staff-start">
+    <option value="" selected>Start time..</option>
+    <option value="1">1:00</option>
+    <option value="2">2:00</option>
+    <option value="3">3:00 </option>
+    <option value="4">4:00</option>
+    <option value="5">5:00</option>
+    <option value="6">6:00 </option>
+    <option value="7">7:00</option>
+    <option value="8">8:00</option>
+    <option value="9">9:00 </option>
+    <option value="10">10:00</option>
+    <option value="11">11:00</option>
+    <option value="12">12:00</option>
+    <option value="13">13:00</option>
+    <option value="14">14:00</option>
+    <option value="15">15:00 </option>
+    <option value="16">16:00</option>
+    <option value="17">17:00</option>
+    <option value="18">18:00</option>
+    <option value="19">19:00</option>
+    <option value="20">20:00</option>
+    <option value="21">21:00</option>
+    <option value="22">22:00</option>
+    <option value="23">23:00</option>
+    <option value="24">24:00</option>
+  </select>
+
+  <!-- </div> -->
+
+  <select id="staff-finish">
+    <option value="" selected>finish time..</option>
+    <option value="1">1:00</option>
+    <option value="2">2:00</option>
+    <option value="3">3:00 </option>
+    <option value="4">4:00</option>
+    <option value="5">5:00</option>
+    <option value="6">6:00 </option>
+    <option value="7">7:00</option>
+    <option value="8">8:00</option>
+    <option value="9">9:00 </option>
+    <option value="10">10:00</option>
+    <option value="11">11:00</option>
+    <option value="12"> 12:00</option>
+    <option value="13">13:00</option>
+    <option value="14">14:00</option>
+    <option value="15">15:00 </option>
+    <option value="16">16:00</option>
+    <option value="17">17:00</option>
+    <option value="18">18:00</option>
+    <option value="19">19:00</option>
+    <option value="20">20:00</option>
+    <option value="21">21:00</option>
+    <option value="22">22:00</option>
+    <option value="23">23:00</option>
+    <option value="24">24:00</option>
+  </select>
+
+
+
+  <div class="position">
+    <select id="emp-position">
+      <option value="" selected>position..</option>
+      <option value="Dishwasher">Dishwasher</option>
+      <option value="Manager">Manager</option>
+      <option value="Customer support">Customer support</option>
+    </select>
+
+  </div>
+
+
+  <button type="button" class="btn-b" onclick="newElement()">
+    submit
+  </button>
+</div>
+
+</div>
+<!-- end of modified -->
+  
+  <!-- end of cane-two -->
+
+
+  <!-- end of store values -->
+  <div class="staff-list" id="t">
+    <div class="fixed-c" id="fixed-c">
+      <!-- show cane -->
+
+      <div class="staff__info">
+        <div class="sL-a">
+          <h4 id="title">NAME</h4>
+            <ul id="myUL" class="f"></ul>
+        </div>
+        <div class="sL-a">
+          <h4 id="title">HOURS</h4>
+            <ul id="myUL-a" class="g"></ul>
+        </div>
+
+        <div class="sL-a">
+          <h4 id="title">POSITION</h4>
+            <ul id="myUL-b" class="h"></ul>
+        </div>
+
+        <div class="sL-a">
+          <h5 id="title">
+            </h3>
+            <ul id="myUL-c" class="i"></ul>
+        </div>
+
+
+      </div>
+
+      <!-- end of staff -->
+    </div>
+
+  </div>
+
+  <!-- end of fixed-c -->
+
+  <!-- end of staff list  -->
+
+</div>
+
+<!-- end of part two -->
+
+    </div>
+    <!-- second page is done -->
+   
+    
+    
+  </body>
+
+  <script src="script.js"></script>
+</html>

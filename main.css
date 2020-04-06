@@ -78,7 +78,7 @@ body {
 .main-btn:hover,
 .banner-btn:hover {
   opacity: 0.8;
-  outline: 0.2rem solid var(--mainBrown);
+  outline: 0.7rem solid var(--mainBrown);
   background: blanchedalmond;
   font-size: 1.8rem;
 }
